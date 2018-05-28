@@ -42,6 +42,7 @@ composer install
 npm install
 cp .env.example .env
 php artisan key:generate
+php artisan migrate:fresh
 ```
 
 Open `.env` file and set the email service provider and the API key for it (Mailgun has a free API for this and works out of the box on Laravel).
